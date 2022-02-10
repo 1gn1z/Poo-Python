@@ -79,10 +79,11 @@ class Camiseta:
 # INIT CREA INSTANCIAS CON VALORES Y ATRIBUTOS INICIALES
 
 # SELF -> Una referencia a la instancia actual de la clase.
-
+"""
 self.color = 'rojo'
 self.marca = 'Puma'
 self.precio = 29.99
+"""
 
 # Al instanciar el objeto e inicializarlo con los valores de los atributos predefinidos (gracias a __init__)
 # self pasa a ser la referencia de dicho objeto, por ejemplo:
@@ -125,6 +126,7 @@ class Camiseta:
 class Camiseta:
     def __init__(self, marca, precio, talla, color): # Parámetros de la clase en el método init para inicializar objetos con estos atributos por defecto!
 
+
 # Ya pasados como parámetros del método init los atributos de nuestra instancia simplemente
 # los asignamos a lo que pasemos como argumento al llamar a la clase:
 
@@ -147,3 +149,22 @@ camisetaBlanca = Camiseta("Adidas", 19.99, "XL", "Blanca")
 camisetaRoja = Camiseta("Puma", 19.99, "L", "Roja")
 
 
+
+# Creación de un MÉTODO de una CLASE (es como una función)
+
+# Supongamos que necesitamos aplicar un descuento a ciertas camisetas, por lo tanto
+# vamos a crear un método que haga eso:
+
+# ABAJO ANEXO CÓDIGO LIMPIO, TOMAR EN CUENTA LA INDENTACION!!!!!!!!!!!!!!!!!!
+
+# Este método recibe un parámetro (aparte de self) que será el porcentaje a descontar
+# Y luego calcula dicho descuento y lo aplica al precio original de la camiseta
+
+    def aplicarDescuento(self, porcentaje):     # SIEMPRE LLEVA SELF CUANDO HABLAMOS DE POO!!
+        self.precio = self.precio*porcentaje/100 # Si introducimos 20 se hará un descuento del 20% al precio original
+
+# Para llamar este método a una instancia usamos igual la NOMENCLATURA DEL PUNTO!:
+
+print(camisetaAnime.precio)     # Antes de aplicar el descuento
+camisetaAnime.aplicarDescuento(50)
+print(camisetaAnime.precio)     # Después de aplicar el descuento
