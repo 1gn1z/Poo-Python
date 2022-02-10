@@ -101,7 +101,17 @@ camisetaPunk.marca # output: Puma
 camisetaPunk.precio # output: 29.99
 
 
+# Código de la explicación anterior limpio:
+# Creación de una clase con su objeto constructor __init__
 
+class Camiseta:
+    def __init__(self):
+        # Atributos con los que se inicializará la instancia (objeto) creado de esta clase
+        self.marca = "Gucci"
+        self.precio = 99.99
+        self.talla = "M"
+        self.color = "negro"
+    
 
 
 
