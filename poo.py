@@ -112,15 +112,38 @@ class Camiseta:
         self.talla = "M"
         self.color = "negro"
     
+# Al instanciar un objeto, se incializará con estos valores pre-definidos
+
+# camisetaRosa = Camiseta()
 
 
+# USO Y CREACIÓN CORRECTA DE CLASES CON INIT
+
+# Lo que debemos hacer al inicilizar una clase con el método init es
+# PASAR LOS ATRIBUTOS como PARAMETROS del mismo método init, así:
+
+class Camiseta:
+    def __init__(self, marca, precio, talla, color): # Parámetros de la clase en el método init para inicializar objetos con estos atributos por defecto!
+
+# Ya pasados como parámetros del método init los atributos de nuestra instancia simplemente
+# los asignamos a lo que pasemos como argumento al llamar a la clase:
+
+        self.marca = marca
+        self.precio = precio
+        self.talla = talla
+        self.color = color
+
+# Ahora, al crear el objeto, simplemente le pasamos el VALOR de sus atributos
+# como parámetros al crear la instancia, por ejemplo:
+
+# Atributos del objeto instanciado marca, precio, talla, color
+
+camisetaAnime = Camiseta("Nike", 19.99, "S", "Azul") # Pasamos el VALOR del atributo
 
 
-
-
-
-
-
-
+# Ahora, ya podemos crear todas las camisetas (objetos) que queramos :D
+camisetaVerde = Camiseta("Nike", 19.99, "S", "Verde")
+camisetaBlanca = Camiseta("Adidas", 19.99, "XL", "Blanca")
+camisetaRoja = Camiseta("Puma", 19.99, "L", "Roja")
 
 
