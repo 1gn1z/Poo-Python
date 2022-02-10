@@ -72,12 +72,33 @@ class Camiseta:
     def __init__(self):     # __init__ SIEMPRE lleva el parámetro SELF!
         pass
 
+# El método __init__ inicializa (construye) un objeto
+# Aquí pondremos los valores de los atributos de nuestro objeto y al instanciarlo
+# se creará con dichos atributos
 
+# INIT CREA INSTANCIAS CON VALORES Y ATRIBUTOS INICIALES
 
+# SELF -> Una referencia a la instancia actual de la clase.
 
+self.color = 'rojo'
+self.marca = 'Puma'
+self.precio = 29.99
 
+# Al instanciar el objeto e inicializarlo con los valores de los atributos predefinidos (gracias a __init__)
+# self pasa a ser la referencia de dicho objeto, por ejemplo:
 
+camisetaPunk = Camiseta()
 
+# self es la referencia de la instancia actual, es decir, "camisetaPunk"
+
+#self.color 
+camisetaPunk.color # output: rojo
+
+#self.marca
+camisetaPunk.marca # output: Puma
+
+#self.precio
+camisetaPunk.precio # output: 29.99
 
 
 
