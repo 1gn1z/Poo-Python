@@ -51,7 +51,26 @@ print("Marca de la camiseta: " + camisetaSpiderman.marca)
 
 
 
+print()
+print()
+print()
 
+
+# METODO __INIT__
+
+# Cuando instanciamos (creamos un objeto) de una clase, el método __init__ se ejecuta por defecto en Python.
+# Al instanciar un objeto, por ejemplo:
+
+# camisetaPunk = Camiseta()
+
+# Automaticamente se ejecuta el metodo __init__ 
+# Este método lo tenemod que DEFINIR NOSOTROS MISMOS dentro de la clase:
+
+# DEFINICIÓN DEL METODO __init__
+
+class Camiseta:
+    def __init__(self):     # __init__ SIEMPRE lleva el parámetro SELF!
+        pass
 
 
 
