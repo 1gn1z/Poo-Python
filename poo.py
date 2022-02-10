@@ -168,3 +168,22 @@ camisetaRoja = Camiseta("Puma", 19.99, "L", "Roja")
 print(camisetaAnime.precio)     # Antes de aplicar el descuento
 camisetaAnime.aplicarDescuento(50)
 print(camisetaAnime.precio)     # Después de aplicar el descuento
+
+
+# Vamos a agregar un nuevo atributo a la clase Camiseta, que será un Booleano
+# que nos indicará si el producto esta ya con descuento o no
+
+self.rebaja = False # Inicialmente el atributo estará inicializado en False (NO VA COMO PARAMETRO EN EL METODO INIT)
+
+
+# Si a la camiseta se le aplica un descuento, entonces esta pasa a estar rebajada,
+# por lo tanto, debemos cambiar el False de self.rebaja a True.
+
+# Dentro de nuestro método "aplicarDescuento" vamos a VERIFICAR que el porcentaje
+# que nos pasen no sea mayor de 100 (no podemos vender algo a 120% de descuento verdad?)
+
+if porcentaje < 100:        # Si el porcentaje es menor del 100%, osea,  tiene rebaja
+    self.rebaja = True      # Entonces, efectivamente tiene rebaja, osea, TRUE.
+
+
+    
