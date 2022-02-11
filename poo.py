@@ -195,4 +195,9 @@ def infoProducto(self):
     print("Descripción del producto:")
     info = f"Marca: {self.marca}\nPrecio: {self.precio}\nTalla: {self.talla}\nColor: {self.color}"
 
+# Comprobamos si el producto tiene rebaja, si sí (True) a la info le concatenamos
+#el mensaje de que tiene descuento
+
+    if self.rebaja == True:
+        info += "PRODUCTO CON DESCUENTO"
 
