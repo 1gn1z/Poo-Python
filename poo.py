@@ -186,4 +186,13 @@ if porcentaje < 100:        # Si el porcentaje es menor del 100%, osea,  tiene r
     self.rebaja = True      # Entonces, efectivamente tiene rebaja, osea, TRUE.
 
 
-    
+
+
+# Implementación de un método que nos muestre toda la información del producto.
+# Simplemente haremos un método que muestre la información (los atributos) del producto.
+
+def infoProducto(self):
+    print("Descripción del producto:")
+    info = f"Marca: {self.marca}\nPrecio: {self.precio}\nTalla: {self.talla}\nColor: {self.color}"
+
+
