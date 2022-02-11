@@ -200,4 +200,4 @@ def infoProducto(self):
 
     if self.rebaja == True:
         info += "PRODUCTO CON DESCUENTO"
-
+    return info
